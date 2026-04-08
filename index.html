@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+      <link rel="stylesheet" href="stylesheet.css">
+      <link rel="icon" href="images/grid-4-icon.svg">
+      <title>Flexbox Crash Course: Home</title>
+   </head>
+
+   <body>
+      <nav class="navbar">
+         <div class="container">
+            <div class="brand">Flexbox</div>
+
+            <div id="dropdown">
+               <ul>
+                  <li class="nav-item">
+                     <a href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="javascript:void(0)">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="javascript:void(0)">Contact</a>
+                  </li>
+               </ul>
+            </div>
+
+            <span href="javascript:void(0);" id="open-btn" onclick="dropMenu()">&#9776;</span>
+         </div>
+      </nav>
+
+      <header class="header" onclick="closeMenu()">
+         <div class="container">
+            <div>
+               <h1>Flexbox Crash Course</h1>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, eveniet? Hic eaque expedita quisquam magnam delectus, laudantium, eum, ratione officiis nemo corrupti ut ipsa. Nobis vitae, quidem ratione earum pariatur veritatis voluptate fugit, modi laborum culpa alias enim reiciendis possimus et.
+               </p>
+            </div>
+            <img src="images/grid-4.svg" alt="">         
+         </div>
+      </header>
+
+      <section class="boxes">
+         <div class="container">
+            <div class="box">
+               <h2><i class="fas fa-arrows-alt-v"></i> Alignment & Space</h2>
+               <p>
+                 A more efficient way to lay out, align and distribute space among items in a container!
+               </p>
+            </div>
+     
+            <div class="box">
+               <h2><i class="fas fa-arrows-alt"></i>Tricky Positioning</h2>
+               <p>
+                 Flexbox usually solves tricky problems including how to position or dynamically resize elements on a page!
+               </p>
+            </div>
+     
+            <div class="box">
+               <h2><i class="fas fa-mobile"></i>Responsive Design</h2>
+               <p>
+                 Flexbox makes building a website layout (and making it responsive!) much, much easier!
+               </p>
+            </div>
+         </div>
+      </section>
+
+      <footer id="footer">
+         <p>
+            &copy;2025
+            <small>Swaanda: Flexbox Crash Course</small>
+         </p>
+      </footer>
+
+
+
+
+
+      <script>
+         function dropMenu()
+         {
+            var dropdown = document.getElementById("dropdown");
+            if (dropdown.style.display === "block") {
+               dropdown.style.display = "none";
+            } else {
+               dropdown.style.display = "block";
+               dropdown.style.top = "60px";
+               dropdown.style.position = "absolute";
+            }
+         }
+
+         function closeMenu()
+         {
+            var dropdown = document.getElementById("dropdown");
+            if (dropdown.style.display === "block") {
+               dropdown.style.display = "none";
+            }
+         }
+      </script>
+   </body>
+</html>
