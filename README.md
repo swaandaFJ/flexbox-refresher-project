@@ -7,7 +7,7 @@ In this personal project, I re-explored the CSS flexbox property and experimente
 ### What I've learned so far:
 - Git/GitHub as developer tools
 - Initialising **Git** repositories, staging and committing code projects
-- Creating branches with `git switch -c`
+- Creating and switching to branches with `git switch -c`
 - Comparing commits with `git diff`
 - Pushing code to **GitHub**
 - Practicing Git workflow
