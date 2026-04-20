@@ -10,6 +10,8 @@ In this personal project, I re-explored the CSS flexbox property and experimente
 - Creating branches with `git switch -c`
 - Comparing commits with `git diff`
 - Pushing code to **GitHub**
+- Practicing Git workflow
+- Mastering clean commit messages
 
 ---
 *Created by [Swaandagwi Feng Jah]*
